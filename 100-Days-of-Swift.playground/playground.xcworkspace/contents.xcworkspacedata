@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:">
+      location = "self:/Users/dogukaninci/Desktop/100 days of swift/100-Days-of-Swift.playground">
    </FileRef>
 </Workspace>
