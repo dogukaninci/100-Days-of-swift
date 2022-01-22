@@ -16,3 +16,8 @@ let firstHalf = ["John", "Paul"]
 let secondHalf = ["George", "Ringo"]
 let beatles = firstHalf + secondHalf
 
+var score = 95
+score -= 5
+var quote = "The rain in Spain falls mainly on the "
+quote += "Spaniarts"
+
