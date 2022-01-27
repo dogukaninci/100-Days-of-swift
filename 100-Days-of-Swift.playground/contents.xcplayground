@@ -5,5 +5,7 @@
         <page name='Day-2-Complex data types'/>
         <page name='Day-3-Arithmetic operators'/>
         <page name='Day-4-Loops'/>
+        <page name='Day-5-Functions'/>
+        <page name='Day-6-Closures-Part-One'/>
     </pages>
 </playground>
