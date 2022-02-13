@@ -27,7 +27,7 @@ func sayHello(to name: String){ //Swift lets us provide two names for each param
 }
 sayHello(to: "Taylor")
 
-func greet(_ person: String){
+func greet(_ person: String){ //Omitting parameter labels
     print("Hello, \(person)")
 }
 greet("Taylor")
@@ -65,7 +65,7 @@ do{
     print("you cannot use this password")
 }
 
-func doubleInPlace(number: inout Int){
+func doubleInPlace(number: inout Int){ // change the given input
     number*=2
 }
 var myNum = 10

@@ -5,5 +5,13 @@
         <page name='Day-2-Complex data types'/>
         <page name='Day-3-Arithmetic operators'/>
         <page name='Day-4-Loops'/>
+        <page name='Day-5-Functions'/>
+        <page name='Day-6-Closures'/>
+        <page name='Day-7-Closures-2'/>
+        <page name='Day-8-Structs'/>
+        <page name='Day-9-Structs-2'/>
+        <page name='Day-10-Classes'/>
+        <page name='Day-11-Protocols and Extensions'/>
+        <page name='Day-12-Optionals'/>
     </pages>
 </playground>
