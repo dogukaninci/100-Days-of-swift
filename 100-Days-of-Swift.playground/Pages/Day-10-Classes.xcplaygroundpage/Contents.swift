@@ -8,7 +8,7 @@ class Dog{
         self.breed = breed
     }
     func makeNoise(){
-        print("Woof!")
+        print("Roar!")
     }
 }
 let poppy = Dog(name: "Poppy", breed: "Poodle")
@@ -22,6 +22,7 @@ class Poodle: Dog{    // Inheritance
     }
 }
 let pooppy = Poodle(name: "Poppy")
+poppy.makeNoise()
 pooppy.makeNoise()
 
 final class Cat{   //This means they can’t override your methods

@@ -13,5 +13,8 @@
         <page name='Day-10-Classes'/>
         <page name='Day-11-Protocols and Extensions'/>
         <page name='Day-12-Optionals'/>
+        <page name='Day-13-ReviewDayOne'/>
+        <page name='Day-14-ReviewDayTwo'/>
+        <page name='Day-15-ReviewDayThree'/>
     </pages>
 </playground>

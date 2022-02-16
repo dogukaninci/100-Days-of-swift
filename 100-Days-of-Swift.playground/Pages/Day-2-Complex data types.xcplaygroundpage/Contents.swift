@@ -6,7 +6,7 @@ let paul = "Paul McCartney"
 let george = "George Harrison"
 let ringo = "Ringo Starr"
 
-let beatles = [john, paul, george, ringo] // array
+let beatles:[Any] = [john, paul, george, ringo] // array
 beatles[1]
 var cities: [String] = ["London", "Paris", "New York"]
 
@@ -20,7 +20,6 @@ name.first
 let address = (house: 555, street: "Taylor Swift Avenue", city: "Nashville") // Tuple: specific, fixed collection
 let set = Set(["aardvark", "astronaut", "azelea"]) // Set:that must be unique or you need to be able to check whether a specific item is in there extremely quickly
 let pythons = ["Eric", "Graham", "John", "Michael", "Terry", "Teryy"] // array: values that can contain duplicates, or the order of your items matters
-
 let heights = [
     "Taylor Swift": 1.78,
     "Ed Sheeren": 1.73

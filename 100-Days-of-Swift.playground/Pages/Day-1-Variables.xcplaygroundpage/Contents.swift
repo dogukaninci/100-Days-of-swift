@@ -2,7 +2,7 @@ import UIKit
 
 var str = "Hello, playground"
 str = "Goodbye"
-var age = 38
+var age = 38.5
 var population = 8000000
 var str1 = """
 This goes
