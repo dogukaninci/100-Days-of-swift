@@ -135,4 +135,110 @@ let vw = UIView()
 UIView.animate(withDuration: 0.5, animations: {
     vw.alpha = 0
 })
+// Protocols
+protocol Employee {
+    var name: String { get set }
+    var jobTitle: String { get set }
+    func doWork()
+}
 
+struct Executive: Employee {
+    var name = "Steve Jobs"
+    var jobTitle = "CEO"
+
+    func doWork() {
+        print("I'm strategizing!")
+    }
+}
+
+struct Manager: Employee {
+    var name = "Maurice Moss"
+    var jobTitle = "Head of IT"
+
+    func doWork() {
+        print("I'm turning it off and on again.")
+    }
+}
+
+let staff: [Employee] = [Executive(), Manager()]
+
+for person in staff {
+    person.doWork()
+}
+
+// Extensions
+
+var myInt = 0
+extension Int {
+    func plusOne() -> Int {
+        return self + 1
+    }
+}
+myInt.plusOne()
+5.plusOne()
+/*
+ extension Int {
+     func plusOne() {
+         self += 1
+     }
+ }
+ 
+ extension Int {
+     mutating func plusOne() { // mutuating meaning that it will change its input
+         self += 1
+     }
+ }
+ 
+
+ str = str.trimmingCharacters(in: .whitespacesAndNewlines) //you'll probably get tired of using this monstrosity, than make extensions
+ 
+ extension String {
+     mutating func trim() {
+         self = trimmingCharacters(in: .whitespacesAndNewlines)
+     }
+ }
+ */
+extension Int {
+    func clamp(low: Int, high: Int) -> Int {
+        if (self > high) {
+            // if we are higher than the upper bound, return the upper bound
+            return high
+        } else if (self < low) {
+            // if we are lower than the lower bound, return the lower bound
+            return low
+        }
+
+        // we are inside the range, so return our value
+        return self
+    }
+}
+
+let i: Int = 8
+print(i.clamp(low: 0, high: 5))
+
+extension BinaryInteger {
+    func clamp(low: Self, high: Self) -> Self { //we need to make the method return Self, which means “I’ll return whatever data type I was used with.”
+        if (self > high) {
+            return high
+        } else if (self < low) {
+            return low
+        }
+
+        return self
+    }
+}
+
+let j: UInt64 = 8
+print(j.clamp(low: 0, high: 5))
+
+protocol Employeee {
+    var name: String { get set }
+    var jobTitle: String { get set }
+    func doWork()
+}
+
+extension Employeee {
+    func doWork() {
+        print("I'm busy!")
+    }
+}
