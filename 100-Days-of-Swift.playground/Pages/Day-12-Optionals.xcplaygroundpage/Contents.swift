@@ -2,7 +2,12 @@ import Foundation
 
 var age: Int? = nil // it might have no value, optional
 age = 38
-
+var numb = 8
+var result = 0
+  for number in 1...numb {
+    result *= number
+  }
+print(result)
 var name: String? = nil
 if let unwrapped = name { //Optional Binding
     print("\(unwrapped.count) letters")
